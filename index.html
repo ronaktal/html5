@@ -20,9 +20,20 @@
   <link rel="stylesheet" href="css/main.css">
 
   <meta name="theme-color" content="#fafafa">
+
+  <script data-require="angulra.js@1.5.x" src="https://code.angularjs.org/1.5.8/angular.min.js" data-semver="1.5.8"></script>
+  <script src="https://code.angularjs.org/1.5.8/angular-animate.min.js"></script>
+  <script src="app.js"></script>
+
 </head>
 
-<body>
+<body ng-controller="MainCtrl">
+
+    <div>Server response: 
+      <div class="response-container">
+        <div ng-animate-swap="data" class="response-text swap-animation">{{ data }}</div>
+      </div>
+    </div>
 
   <!-- Add your site or application content here -->
   <p>Hello world! This is HTML5 Boilerplate.</p>
