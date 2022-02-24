@@ -7,7 +7,7 @@ app.controller('MainCtrl', function($scope, $http, $timeout) {
     loadPromise; //Pointer to the promise created by the Angular $timout service
 
   var getData = function() {
-    $http.get('http://httpbin.org/delay/1?now=' + Date.now())
+    $http.get('https://httpbin.org/delay/1?now=' + Date.now())
 
     .then(function(res) {
       $scope.data = res.data.args;
